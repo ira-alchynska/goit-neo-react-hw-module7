@@ -15,7 +15,6 @@ const App = () => {
   const loading = useSelector((state) => state.contacts.loading);
   const error = useSelector((state) => state.contacts.error);
 
-  // Fetch contacts from backend on app load
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
